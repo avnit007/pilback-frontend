@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+}
+
+.main-div {
+  width: 100%;
+  min-height: calc(100vh - 56px);
+  max-height: calc(100vh - 56px);
+  overflow: auto;
+  padding: 2rem 4rem;
+}
+
+.main-div>.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.card {
+  border-radius: 8px;
+}
+
+.p-datatable>.p-datatable-wrapper {
+  border-radius: 8px;
+}
+
+.error-msg {
+  font-size: 12px;
+  color: #ff0000;
+}
+
+.container-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1099;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: scale 2s infinite cubic-bezier(0, 0, 0.49, 1.02);
+}
+
+.circle-1 {
+  background-color: #9400D3;
+}
+
+.circle-1:before {
+  background-color: #9400D3;
+  animation-delay: 0.4s;
+}
+
+.circle-2 {
+  background-color: #4B0082;
+}
+
+.circle-2:before {
+  background-color: #4B0082;
+  animation-delay: 0.8s;
+}
+
+.circle-3 {
+  background-color: #0000FF;
+}
+
+.circle-3:before {
+  background-color: #0000FF;
+  animation-delay: 1.2s;
+}
+
+.circle-4 {
+  background-color: #00FF00;
+}
+
+.circle-4:before {
+  background-color: #00FF00;
+  animation-delay: 1.6s;
+}
+
+.circle-5 {
+  background-color: #FF7F00;
+}
+
+.circle-5:before {
+  background-color: #FF7F00;
+  animation-delay: 2s;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50%,
+  75% {
+    transform: scale(2.5);
+  }
+
+  78%,
+  100% {
+    opacity: 0;
+  }
+}
